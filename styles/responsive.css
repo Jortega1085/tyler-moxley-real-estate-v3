@@ -1,0 +1,273 @@
+/* Tyler Moxley Real Estate v3 - Responsive Design */
+
+/* === TABLET STYLES === */
+@media (max-width: 1024px) {
+    .hero-stats {
+        gap: var(--spacing-md);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .insights-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* === MOBILE STYLES === */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: var(--spacing-xl);
+        transition: var(--transition);
+        box-shadow: var(--shadow-medium);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .nav-contact {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .title-main {
+        font-size: 2.5rem;
+    }
+    
+    .title-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 200px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    /* Typography */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    /* Spacing */
+    section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Property Grid */
+    .properties-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .service-card {
+        padding: var(--spacing-md);
+    }
+    
+    /* Market Stats */
+    .market-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* Search Options */
+    .search-options {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* About Buttons */
+    .about-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .about-buttons .btn {
+        text-align: center;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+    
+    .footer-contact {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+}
+
+/* === SMALL MOBILE === */
+@media (max-width: 480px) {
+    .title-main {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .property-card {
+        margin: 0 var(--spacing-xs);
+    }
+    
+    .service-card {
+        padding: var(--spacing-md);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .contact-form {
+        padding: var(--spacing-md);
+    }
+    
+    .btn {
+        padding: 0.75rem var(--spacing-md);
+        font-size: 0.85rem;
+    }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print {
+    .navbar,
+    .hero-video,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        background: var(--background-secondary);
+        color: var(--text-primary);
+        height: auto;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-content {
+        color: var(--text-primary);
+    }
+    
+    .btn {
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        background: transparent;
+    }
+}
+
+/* === HIGH CONTRAST MODE === */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000000;
+        --text-secondary: #000000;
+        --background-secondary: #ffffff;
+    }
+    
+    .btn-outline {
+        border-width: 3px;
+    }
+    
+    .nav-link::after {
+        height: 3px;
+    }
+}

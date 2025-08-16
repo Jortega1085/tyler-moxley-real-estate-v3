@@ -1,0 +1,51 @@
+# Tyler Moxley Real Estate v3 - Git Ignore File
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Log Files
+*.log
+logs/
+
+# Backup Files
+*.bak
+*.backup
+
+# Development Files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Uncomment if you want to exclude large video files
+# (Keep commented to include videos in repository)
+# *.mp4
+# *.mov
+# *.avi
+
+# Cache Files
+.cache/
+.parcel-cache/
+
+# Production Build Files (if using build tools)
+dist/
+build/

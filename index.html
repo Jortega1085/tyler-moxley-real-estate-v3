@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Moxley - 4th Generation Realtor | Luxury Real Estate in Livermore & Pleasanton</title>
+    <meta name="description" content="Tyler Moxley, 4th Generation Realtor and Broker Associate, specializes in luxury homes and exceptional service in Livermore, Pleasanton, and the Tri-Valley area.">
+    <meta name="keywords" content="Tyler Moxley, real estate, Livermore, Pleasanton, luxury homes, 4th generation realtor, Compass">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="logo">
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#properties" class="nav-link">PROPERTIES</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            
+            <div class="nav-contact">
+                <span class="phone-number">(925) 518-1083</span>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video id="hero-video-player" autoplay muted playsinline>
+                <source src="hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            
+            <!-- Video Indicator -->
+            <div class="video-indicator">
+                <span class="current-video" id="current-video">1</span>
+                <span class="video-separator">/</span>
+                <span class="total-videos" id="total-videos">5</span>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main">Tyler Moxley</span>
+                    <span class="title-subtitle">4th Generation Realtor</span>
+                </h1>
+                <p class="hero-description">
+                    Delivering exceptional real estate experiences in Livermore, Pleasanton, 
+                    and the Tri-Valley with four generations of local expertise.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">VIEW PROPERTIES</a>
+                    <a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">$50M+</span>
+                    <span class="stat-label">Annual Sales Volume</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Homes Sold</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4th</span>
+                    <span class="stat-label">Generation Realtor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Properties</h2>
+                <p class="section-subtitle">Exceptional homes in the Tri-Valley's most desirable neighborhoods</p>
+            </div>
+            
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/property-1.jpg" alt="Luxury Home in Livermore" loading="lazy">
+                        <div class="property-status">FOR SALE</div>
+                        <div class="property-price">$1,850,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">123 Oak Valley Lane, Livermore</h3>
+                        <div class="property-specs">
+                            <span class="spec">4 Beds</span>
+                            <span class="spec">3 Baths</span>
+                            <span class="spec">2,800 sq ft</span>
+                        </div>
+                        <p class="property-description">
+                            Stunning single-story home in prestigious Oak Valley with panoramic valley views 
+                            and resort-style backyard.
+                        </p>
+                        <a href="pages/property-detail.html?id=1" class="btn btn-outline">VIEW DETAILS</a>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/property-2.jpg" alt="Modern Home in Pleasanton" loading="lazy">
+                        <div class="property-status sold">SOLD</div>
+                        <div class="property-price">$2,100,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">456 Vineyard Drive, Pleasanton</h3>
+                        <div class="property-specs">
+                            <span class="spec">5 Beds</span>
+                            <span class="spec">4 Baths</span>
+                            <span class="spec">3,200 sq ft</span>
+                        </div>
+                        <p class="property-description">
+                            Contemporary masterpiece with wine country views, gourmet kitchen, 
+                            and award-winning Pleasanton schools.
+                        </p>
+                        <a href="pages/property-detail.html?id=2" class="btn btn-outline">VIEW DETAILS</a>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/property-3.jpg" alt="Estate Home in Dublin" loading="lazy">
+                        <div class="property-status">FOR SALE</div>
+                        <div class="property-price">$2,750,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">789 Estate Court, Dublin</h3>
+                        <div class="property-specs">
+                            <span class="spec">6 Beds</span>
+                            <span class="spec">5 Baths</span>
+                            <span class="spec">4,500 sq ft</span>
+                        </div>
+                        <p class="property-description">
+                            Magnificent estate home on private 1-acre lot with guest house, 
+                            pool, and mountain views.
+                        </p>
+                        <a href="pages/property-detail.html?id=3" class="btn btn-outline">VIEW DETAILS</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="pages/all-properties.html" class="btn btn-primary">VIEW ALL PROPERTIES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Tyler-Moxley-pic.jpg" alt="Tyler Moxley - 4th Generation Realtor" class="agent-photo">
+                    <div class="experience-badge">
+                        <span class="badge-text">4th Generation</span>
+                        <span class="badge-subtext">Realtor</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h2 class="about-title">Meet Tyler Moxley</h2>
+                    <h3 class="about-subtitle">Your Local Real Estate Expert</h3>
+                    
+                    <div class="about-description">
+                        <p>
+                            As a 4th generation Realtor born and raised in the Pleasanton/Livermore Valley, 
+                            I bring unmatched local knowledge and a deep commitment to serving our community. 
+                            My family's legacy in real estate spans decades, giving me unique insights into 
+                            market trends and neighborhood dynamics.
+                        </p>
+                        
+                        <p>
+                            Located at 2059 3rd St in Livermore, I specialize in luxury homes, investment 
+                            properties, and helping families find their perfect home in the Tri-Valley. 
+                            Whether you're buying your first home or selling a family estate, I provide 
+                            personalized service backed by generations of expertise.
+                        </p>
+                    </div>
+                    
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="icon-badge"></i>
+                            <span>Broker Associate</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="icon-compass"></i>
+                            <span>Compass Real Estate</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="icon-location"></i>
+                            <span>Livermore & Pleasanton Specialist</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">WORK WITH TYLER</a>
+                        <a href="pages/about.html" class="btn btn-outline">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Real Estate Services</h2>
+                <p class="section-subtitle">Comprehensive support for all your real estate needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Home Buying</h3>
+                    <p class="service-description">
+                        Expert guidance through every step of the home buying process, 
+                        from initial search to closing day.
+                    </p>
+                    <ul class="service-features">
+                        <li>Personalized property search</li>
+                        <li>Market analysis and pricing</li>
+                        <li>Negotiation expertise</li>
+                        <li>Closing coordination</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Home Selling</h3>
+                    <p class="service-description">
+                        Strategic marketing and pricing to maximize your home's value 
+                        and ensure a smooth selling experience.
+                    </p>
+                    <ul class="service-features">
+                        <li>Professional staging consultation</li>
+                        <li>Premium marketing strategy</li>
+                        <li>Professional photography</li>
+                        <li>Expert pricing analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="service-title">Relocation Services</h3>
+                    <p class="service-description">
+                        Comprehensive relocation assistance for families moving 
+                        to or within the Tri-Valley area.
+                    </p>
+                    <ul class="service-features">
+                        <li>Neighborhood expertise</li>
+                        <li>School district information</li>
+                        <li>Community resources</li>
+                        <li>Lifestyle matching</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title">Investment Properties</h3>
+                    <p class="service-description">
+                        Strategic investment property acquisition and portfolio 
+                        management in high-growth markets.
+                    </p>
+                    <ul class="service-features">
+                        <li>Market analysis</li>
+                        <li>ROI calculations</li>
+                        <li>Portfolio strategy</li>
+                        <li>Property management connections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights -->
+    <section class="market-insights">
+        <div class="container">
+            <div class="insights-content">
+                <div class="insights-text">
+                    <h2 class="insights-title">Local Market Expertise</h2>
+                    <p class="insights-description">
+                        With four generations of family history in the Tri-Valley, I provide 
+                        unparalleled insights into local market trends, neighborhood dynamics, 
+                        and investment opportunities.
+                    </p>
+                    
+                    <div class="market-stats">
+                        <div class="market-stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">List Price Achieved</span>
+                        </div>
+                        <div class="market-stat">
+                            <span class="stat-number">18</span>
+                            <span class="stat-label">Average Days on Market</span>
+                        </div>
+                        <div class="market-stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    
+                    <a href="pages/market-reports.html" class="btn btn-primary">VIEW MARKET REPORTS</a>
+                </div>
+                
+                <div class="insights-image">
+                    <img src="images/livermore-valley.jpg" alt="Livermore Valley" class="market-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">Hear from families who trusted Tyler with their real estate journey</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Tyler's knowledge of the Livermore market is unmatched. He helped us find 
+                            our dream home and negotiated an incredible deal. His attention to detail 
+                            and personal service made all the difference."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Sarah & Michael Johnson</span>
+                            <span class="author-location">Livermore Homebuyers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Working with Tyler was a pleasure from start to finish. His marketing 
+                            strategy got our home sold quickly and for top dollar. We couldn't be 
+                            happier with the results."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Robert & Linda Chen</span>
+                            <span class="author-location">Pleasanton Home Sellers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "As first-time homebuyers, we were nervous about the process. Tyler 
+                            guided us every step of the way with patience and expertise. We found 
+                            the perfect home in our ideal neighborhood."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">David & Jennifer Martinez</span>
+                            <span class="author-location">Dublin First-Time Buyers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Properties -->
+    <section class="property-search">
+        <div class="container">
+            <div class="search-content">
+                <h2 class="search-title">Find Your Perfect Home</h2>
+                <p class="search-subtitle">Search properties by location, lifestyle, or school district</p>
+                
+                <div class="search-options">
+                    <a href="pages/search-by-city.html" class="search-card">
+                        <div class="search-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Search by City</h3>
+                        <p>Livermore, Pleasanton, Dublin, San Ramon</p>
+                    </a>
+                    
+                    <a href="pages/search-by-school.html" class="search-card">
+                        <div class="search-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Search by School</h3>
+                        <p>Top-rated school districts and boundaries</p>
+                    </a>
+                    
+                    <a href="pages/search-by-lifestyle.html" class="search-card">
+                        <div class="search-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Search by Lifestyle</h3>
+                        <p>Find homes that match your way of life</p>
+                    </a>
+                    
+                    <a href="pages/search-by-neighborhood.html" class="search-card">
+                        <div class="search-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Search by Neighborhood</h3>
+                        <p>Explore distinct communities and areas</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Ready to Get Started?</h2>
+                    <p class="contact-description">
+                        Let's discuss your real estate goals and how I can help you achieve them.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">(925) 518-1083</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">tyler@tylermoxley.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Office</span>
+                                <span class="contact-value">2059 3rd St, Livermore, CA 94550</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">I'm interested in...</option>
+                                <option value="buying">Buying a Home</option>
+                                <option value="selling">Selling a Home</option>
+                                <option value="relocation">Relocation Services</option>
+                                <option value="investment">Investment Properties</option>
+                                <option value="consultation">Market Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Tell me about your real estate goals..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="footer-logo">
+                    <p class="footer-description">
+                        4th Generation Realtor serving Livermore, Pleasanton, and the Tri-Valley 
+                        with exceptional real estate experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Properties</h4>
+                        <ul class="footer-menu">
+                            <li><a href="pages/current-listings.html">Current Listings</a></li>
+                            <li><a href="pages/sold-properties.html">Recently Sold</a></li>
+                            <li><a href="pages/luxury-homes.html">Luxury Homes</a></li>
+                            <li><a href="pages/investment-properties.html">Investments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Areas</h4>
+                        <ul class="footer-menu">
+                            <li><a href="pages/livermore.html">Livermore</a></li>
+                            <li><a href="pages/pleasanton.html">Pleasanton</a></li>
+                            <li><a href="pages/dublin.html">Dublin</a></li>
+                            <li><a href="pages/san-ramon.html">San Ramon</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-menu">
+                            <li><a href="pages/buyers-guide.html">Buyer's Guide</a></li>
+                            <li><a href="pages/sellers-guide.html">Seller's Guide</a></li>
+                            <li><a href="pages/market-reports.html">Market Reports</a></li>
+                            <li><a href="pages/neighborhood-guide.html">Neighborhoods</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Tyler Moxley Real Estate. All rights reserved.</p>
+                    <p>DRE License #[License Number] | Equal Housing Opportunity</p>
+                </div>
+                <div class="footer-contact">
+                    <span>(925) 518-1083</span>
+                    <span>2059 3rd St, Livermore, CA 94550</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/contact-form.js"></script>
+</body>
+</html>

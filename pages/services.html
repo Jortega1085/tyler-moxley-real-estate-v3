@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services - Tyler Moxley | Buying, Selling & Relocation in Tri-Valley</title>
+    <meta name="description" content="Complete real estate services from Tyler Moxley: home buying, selling, relocation, and investment properties in Livermore, Pleasanton, and Tri-Valley.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">HOME</a>
+                <a href="all-properties.html" class="nav-link">PROPERTIES</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="services.html" class="nav-link active">SERVICES</a>
+                <a href="testimonials.html" class="nav-link">TESTIMONIALS</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
+            
+            <div class="nav-contact">
+                <span class="phone-number">(925) 518-1083</span>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="services-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="breadcrumbs">
+                    <a href="../index.html" class="breadcrumb-item">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item active">Services</span>
+                </div>
+                <h1 class="page-title">Complete Real Estate Services</h1>
+                <p class="page-subtitle">Comprehensive support for all your property needs in the Tri-Valley</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="services-intro">
+                <h2 class="intro-title">Full-Service Real Estate Excellence</h2>
+                <div class="luxury-divider"></div>
+                <p class="intro-description">
+                    With four generations of experience serving the Tri-Valley, I provide comprehensive 
+                    real estate services designed to exceed your expectations. From first-time buyers 
+                    to luxury estates, I deliver personalized service and exceptional results.
+                </p>
+            </div>
+            
+            <div class="services-detailed-grid">
+                <!-- Home Buying Services -->
+                <div class="service-detailed-card">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="service-title-area">
+                            <h3>Home Buying Services</h3>
+                            <p>Expert guidance from search to closing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <p class="service-overview">
+                            Whether you're a first-time buyer or looking for your dream home, I provide 
+                            comprehensive support throughout the entire buying process with personalized 
+                            attention and local market expertise.
+                        </p>
+                        
+                        <div class="service-features-detailed">
+                            <div class="feature-category">
+                                <h4>Property Search & Selection</h4>
+                                <ul>
+                                    <li>Personalized MLS search based on your criteria</li>
+                                    <li>Private showings and property tours</li>
+                                    <li>Off-market and coming soon opportunities</li>
+                                    <li>Investment property analysis and ROI calculations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Market Analysis & Pricing</h4>
+                                <ul>
+                                    <li>Comparative market analysis (CMA)</li>
+                                    <li>Neighborhood trend analysis</li>
+                                    <li>Future development impact assessment</li>
+                                    <li>School district and amenity evaluations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Transaction Support</h4>
+                                <ul>
+                                    <li>Offer strategy and negotiation</li>
+                                    <li>Contract review and explanation</li>
+                                    <li>Inspection coordination and evaluation</li>
+                                    <li>Closing coordination and support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-action">
+                            <a href="buyers-guide.html" class="btn btn-outline">BUYER'S GUIDE</a>
+                            <button onclick="requestConsultation()" class="btn btn-primary">GET STARTED</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Selling Services -->
+                <div class="service-detailed-card">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-title-area">
+                            <h3>Home Selling Services</h3>
+                            <p>Strategic marketing for maximum results</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <p class="service-overview">
+                            Maximize your home's value with my comprehensive marketing approach, 
+                            professional presentation, and strategic pricing to achieve optimal 
+                            results in the shortest time frame.
+                        </p>
+                        
+                        <div class="service-features-detailed">
+                            <div class="feature-category">
+                                <h4>Property Preparation</h4>
+                                <ul>
+                                    <li>Professional staging consultation</li>
+                                    <li>Pre-listing inspection recommendations</li>
+                                    <li>Minor repair and improvement guidance</li>
+                                    <li>Curb appeal enhancement strategies</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Premium Marketing</h4>
+                                <ul>
+                                    <li>Professional photography and virtual tours</li>
+                                    <li>Drone aerial photography and video</li>
+                                    <li>Multi-platform digital marketing campaign</li>
+                                    <li>Social media promotion and targeted ads</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Sales Strategy</h4>
+                                <ul>
+                                    <li>Strategic pricing analysis and positioning</li>
+                                    <li>Multiple offer management and negotiation</li>
+                                    <li>Market timing and launch strategy</li>
+                                    <li>Regular market feedback and adjustments</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-action">
+                            <a href="sellers-guide.html" class="btn btn-outline">SELLER'S GUIDE</a>
+                            <button onclick="requestMarketAnalysis()" class="btn btn-primary">FREE HOME VALUATION</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relocation Services -->
+                <div class="service-detailed-card">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="service-title-area">
+                            <h3>Relocation Services</h3>
+                            <p>Seamless transitions to the Tri-Valley</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <p class="service-overview">
+                            Moving to the Tri-Valley? Let my local expertise and comprehensive 
+                            relocation services make your transition smooth and stress-free. 
+                            I help families find not just a house, but a home in the perfect community.
+                        </p>
+                        
+                        <div class="service-features-detailed">
+                            <div class="feature-category">
+                                <h4>Area Familiarization</h4>
+                                <ul>
+                                    <li>Comprehensive neighborhood tours</li>
+                                    <li>School district information and rankings</li>
+                                    <li>Commute planning and transportation options</li>
+                                    <li>Local amenities and lifestyle matching</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Community Integration</h4>
+                                <ul>
+                                    <li>Introduction to local businesses and services</li>
+                                    <li>Community organizations and activities</li>
+                                    <li>Healthcare and professional services referrals</li>
+                                    <li>Children's activities and sports programs</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Relocation Support</h4>
+                                <ul>
+                                    <li>Corporate relocation coordination</li>
+                                    <li>Temporary housing assistance</li>
+                                    <li>Moving company recommendations</li>
+                                    <li>Utility setup and change of address support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-action">
+                            <a href="relocation-guide.html" class="btn btn-outline">RELOCATION GUIDE</a>
+                            <button onclick="requestRelocationPacket()" class="btn btn-primary">GET INFO PACKET</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investment Services -->
+                <div class="service-detailed-card">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="service-title-area">
+                            <h3>Investment Property Services</h3>
+                            <p>Strategic real estate investment guidance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <p class="service-overview">
+                            Build wealth through strategic real estate investments in the growing 
+                            Tri-Valley market. I provide comprehensive analysis, market insights, 
+                            and ongoing portfolio management support.
+                        </p>
+                        
+                        <div class="service-features-detailed">
+                            <div class="feature-category">
+                                <h4>Investment Analysis</h4>
+                                <ul>
+                                    <li>ROI and cash flow projections</li>
+                                    <li>Market appreciation potential analysis</li>
+                                    <li>Rental market research and pricing</li>
+                                    <li>Risk assessment and mitigation strategies</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Property Acquisition</h4>
+                                <ul>
+                                    <li>Investment property sourcing and evaluation</li>
+                                    <li>Off-market opportunity identification</li>
+                                    <li>Negotiation and acquisition support</li>
+                                    <li>Due diligence and inspection coordination</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Portfolio Management</h4>
+                                <ul>
+                                    <li>Property management company referrals</li>
+                                    <li>Ongoing market performance monitoring</li>
+                                    <li>Exit strategy planning and timing</li>
+                                    <li>1031 exchange coordination and support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-action">
+                            <a href="investment-guide.html" class="btn btn-outline">INVESTMENT GUIDE</a>
+                            <button onclick="requestInvestmentAnalysis()" class="btn btn-primary">ANALYZE INVESTMENTS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="process-overview">
+        <div class="container">
+            <h2 class="process-title">My Client-Centered Process</h2>
+            <div class="luxury-divider"></div>
+            <p class="process-description">
+                Every client receives personalized attention and a customized strategy 
+                designed to achieve your specific real estate goals.
+            </p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Initial Consultation</h4>
+                        <p>We'll discuss your goals, timeline, and preferences in detail to create your personalized strategy.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Market Analysis</h4>
+                        <p>Comprehensive market research and analysis specific to your needs and target areas.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Strategy Implementation</h4>
+                        <p>Execute your customized plan with professional marketing, expert negotiation, and constant communication.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Successful Closing</h4>
+                        <p>Smooth transaction management and closing coordination to achieve your real estate goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-proposition">
+        <div class="container">
+            <div class="value-content">
+                <div class="value-text">
+                    <h2 class="value-title">Why Choose Tyler Moxley?</h2>
+                    <div class="luxury-divider"></div>
+                    
+                    <div class="value-points">
+                        <div class="value-point">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="value-description">
+                                <h4>4th Generation Legacy</h4>
+                                <p>Four generations of real estate expertise and community relationships that benefit every client.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-point">
+                            <div class="value-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="value-description">
+                                <h4>Unmatched Local Knowledge</h4>
+                                <p>Born and raised in the area with intimate knowledge of every neighborhood, school, and community.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-point">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="value-description">
+                                <h4>Personal Commitment</h4>
+                                <p>Your success is my success. I'm personally invested in achieving your real estate goals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-point">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="value-description">
+                                <h4>Proven Results</h4>
+                                <p>Track record of success with 95% list price achievement and 18 average days on market.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-stats">
+                    <div class="stats-container">
+                        <div class="stat-item-large">
+                            <span class="stat-number">$50M+</span>
+                            <span class="stat-label">Annual Sales Volume</span>
+                            <span class="stat-description">Consistent high-volume production</span>
+                        </div>
+                        
+                        <div class="stat-item-large">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Homes Sold</span>
+                            <span class="stat-description">Successful transactions</span>
+                        </div>
+                        
+                        <div class="stat-item-large">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                            <span class="stat-description">Five-star service rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Tools -->
+    <section class="technology-tools">
+        <div class="container">
+            <h2 class="tech-title">Modern Tools, Traditional Values</h2>
+            <div class="luxury-divider"></div>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Professional Photography</h4>
+                    <p>High-quality photography and virtual tours to showcase your property's best features.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Digital Marketing</h4>
+                    <p>Comprehensive online marketing across all major platforms and real estate websites.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Market Analytics</h4>
+                    <p>Advanced market analysis tools and real-time data to inform strategic decisions.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile Technology</h4>
+                    <p>Instant access to listings, market data, and communication tools for efficient service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Experience the Difference?</h2>
+            <p class="cta-description">
+                Let's discuss how my comprehensive services and local expertise 
+                can help you achieve your real estate goals.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn cta-button">GET STARTED TODAY</a>
+                <a href="tel:925-518-1083" class="btn btn-secondary">CALL NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="footer-logo">
+                    <p class="footer-description">
+                        4th Generation Realtor serving Livermore, Pleasanton, and the Tri-Valley 
+                        with exceptional real estate experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Properties</h4>
+                        <ul class="footer-menu">
+                            <li><a href="current-listings.html">Current Listings</a></li>
+                            <li><a href="sold-properties.html">Recently Sold</a></li>
+                            <li><a href="luxury-homes.html">Luxury Homes</a></li>
+                            <li><a href="investment-properties.html">Investments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Areas</h4>
+                        <ul class="footer-menu">
+                            <li><a href="livermore.html">Livermore</a></li>
+                            <li><a href="pleasanton.html">Pleasanton</a></li>
+                            <li><a href="dublin.html">Dublin</a></li>
+                            <li><a href="san-ramon.html">San Ramon</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-menu">
+                            <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+                            <li><a href="sellers-guide.html">Seller's Guide</a></li>
+                            <li><a href="market-reports.html">Market Reports</a></li>
+                            <li><a href="neighborhood-guide.html">Neighborhoods</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Tyler Moxley Real Estate. All rights reserved.</p>
+                    <p>DRE License #[License Number] | Equal Housing Opportunity</p>
+                </div>
+                <div class="footer-contact">
+                    <span>(925) 518-1083</span>
+                    <span>2059 3rd St, Livermore, CA 94550</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/navigation.js"></script>
+    <script src="../scripts/contact-form.js"></script>
+    
+    <script>
+        // Service-specific functions
+        function requestMarketAnalysis() {
+            showNotification('Free home valuation request sent! Tyler will prepare your market analysis within 24 hours.', 'success');
+            trackEvent('service', 'request_valuation', 'home_selling');
+        }
+        
+        function requestRelocationPacket() {
+            showNotification('Relocation information packet requested! You\'ll receive comprehensive area information within 4 hours.', 'success');
+            trackEvent('service', 'request_packet', 'relocation');
+        }
+        
+        function requestInvestmentAnalysis() {
+            showNotification('Investment analysis request sent! Tyler will contact you to discuss opportunities and strategy.', 'success');
+            trackEvent('service', 'request_analysis', 'investment');
+        }
+    </script>
+</body>
+</html>

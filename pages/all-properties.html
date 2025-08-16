@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Tyler Moxley Real Estate | Luxury Homes in Livermore & Pleasanton</title>
+    <meta name="description" content="Browse luxury homes and investment properties in Livermore, Pleasanton, Dublin, and San Ramon. Expert guidance from 4th generation Realtor Tyler Moxley.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">HOME</a>
+                <a href="all-properties.html" class="nav-link active">PROPERTIES</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
+                <a href="testimonials.html" class="nav-link">TESTIMONIALS</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
+            
+            <div class="nav-contact">
+                <span class="phone-number">(925) 518-1083</span>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <div class="breadcrumbs">
+                <a href="../index.html" class="breadcrumb-item">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item active">Properties</span>
+            </div>
+            <h1 class="page-title">Luxury Properties</h1>
+            <p class="page-subtitle">Exceptional homes in the Tri-Valley's most desirable locations</p>
+        </div>
+    </section>
+
+    <!-- Property Filters -->
+    <section class="property-filters-section">
+        <div class="container">
+            <div class="filters-header">
+                <h2>Find Your Perfect Home</h2>
+                <p>Filter properties by status, location, or price range</p>
+            </div>
+            
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">All Properties</button>
+                <button class="filter-btn" data-filter="for-sale">For Sale</button>
+                <button class="filter-btn" data-filter="sold">Recently Sold</button>
+                <button class="filter-btn" data-filter="luxury">Luxury Homes</button>
+                <button class="filter-btn" data-filter="investment">Investment</button>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" class="property-search-input" placeholder="Search by address, city, or features...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="properties-showcase">
+        <div class="container">
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card for-sale luxury">
+                    <div class="property-image">
+                        <img src="../images/property-1.jpg" alt="Luxury Home in Livermore" loading="lazy">
+                        <div class="property-status for-sale">FOR SALE</div>
+                        <div class="property-price">$1,850,000</div>
+                        <div class="property-badges">
+                            <span class="badge luxury">LUXURY</span>
+                        </div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">123 Oak Valley Lane, Livermore</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
+                            <span class="spec"><i class="fas fa-car"></i> 3 Car Garage</span>
+                        </div>
+                        <p class="property-description">
+                            Stunning single-story home in prestigious Oak Valley with panoramic valley views, 
+                            resort-style backyard, and designer finishes throughout.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Pool & Spa</span>
+                            <span class="feature">Wine Cellar</span>
+                            <span class="feature">Gourmet Kitchen</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=1" class="btn btn-primary">VIEW DETAILS</a>
+                            <button class="btn btn-outline" onclick="scheduleShowing(1)">SCHEDULE SHOWING</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card sold luxury">
+                    <div class="property-image">
+                        <img src="../images/property-2.jpg" alt="Modern Home in Pleasanton" loading="lazy">
+                        <div class="property-status sold">SOLD</div>
+                        <div class="property-price">$2,100,000</div>
+                        <div class="sold-badge">SOLD ABOVE ASKING</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">456 Vineyard Drive, Pleasanton</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+                            <span class="spec"><i class="fas fa-tree"></i> 0.5 Acre</span>
+                        </div>
+                        <p class="property-description">
+                            Contemporary masterpiece with wine country views, gourmet kitchen, 
+                            and award-winning Pleasanton schools. Sold in 12 days.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Smart Home</span>
+                            <span class="feature">Solar Panels</span>
+                            <span class="feature">Guest Suite</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=2" class="btn btn-outline">VIEW DETAILS</a>
+                            <button class="btn btn-secondary" onclick="viewSimilar(2)">FIND SIMILAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card for-sale luxury">
+                    <div class="property-image">
+                        <img src="../images/property-3.jpg" alt="Estate Home in Dublin" loading="lazy">
+                        <div class="property-status for-sale">FOR SALE</div>
+                        <div class="property-price">$2,750,000</div>
+                        <div class="property-badges">
+                            <span class="badge luxury">LUXURY</span>
+                            <span class="badge new">NEW LISTING</span>
+                        </div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">789 Estate Court, Dublin</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 6 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 4,500 sq ft</span>
+                            <span class="spec"><i class="fas fa-tree"></i> 1 Acre</span>
+                        </div>
+                        <p class="property-description">
+                            Magnificent estate home on private 1-acre lot with guest house, 
+                            resort-style pool, and breathtaking mountain views.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Guest House</span>
+                            <span class="feature">Tennis Court</span>
+                            <span class="feature">Wine Cave</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=3" class="btn btn-primary">VIEW DETAILS</a>
+                            <button class="btn btn-outline" onclick="scheduleShowing(3)">SCHEDULE SHOWING</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card for-sale investment">
+                    <div class="property-image">
+                        <img src="../images/property-4.jpg" alt="Investment Property in San Ramon" loading="lazy">
+                        <div class="property-status for-sale">FOR SALE</div>
+                        <div class="property-price">$1,250,000</div>
+                        <div class="property-badges">
+                            <span class="badge investment">INVESTMENT</span>
+                        </div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">321 Investment Lane, San Ramon</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 1,800 sq ft</span>
+                            <span class="spec"><i class="fas fa-percentage"></i> 5.2% Cap Rate</span>
+                        </div>
+                        <p class="property-description">
+                            Excellent investment opportunity in growing San Ramon market. 
+                            Strong rental history and potential for appreciation.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Rental Income</span>
+                            <span class="feature">Low Maintenance</span>
+                            <span class="feature">Great Schools</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=4" class="btn btn-primary">VIEW DETAILS</a>
+                            <button class="btn btn-outline" onclick="requestAnalysis(4)">REQUEST ANALYSIS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card sold">
+                    <div class="property-image">
+                        <img src="../images/property-5.jpg" alt="Family Home in Livermore" loading="lazy">
+                        <div class="property-status sold">SOLD</div>
+                        <div class="property-price">$1,450,000</div>
+                        <div class="sold-badge">SOLD IN 8 DAYS</div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">654 Family Circle, Livermore</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 2,400 sq ft</span>
+                            <span class="spec"><i class="fas fa-graduation-cap"></i> Top Schools</span>
+                        </div>
+                        <p class="property-description">
+                            Beautiful family home in sought-after neighborhood with excellent schools, 
+                            updated kitchen, and large backyard perfect for entertaining.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Updated Kitchen</span>
+                            <span class="feature">Large Backyard</span>
+                            <span class="feature">Walk to Schools</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=5" class="btn btn-outline">VIEW DETAILS</a>
+                            <button class="btn btn-secondary" onclick="viewSimilar(5)">FIND SIMILAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card for-sale">
+                    <div class="property-image">
+                        <img src="../images/property-6.jpg" alt="Starter Home in Pleasanton" loading="lazy">
+                        <div class="property-status for-sale">FOR SALE</div>
+                        <div class="property-price">$950,000</div>
+                        <div class="property-badges">
+                            <span class="badge starter">STARTER HOME</span>
+                        </div>
+                    </div>
+                    <div class="property-details">
+                        <h3 class="property-address">987 Starter Street, Pleasanton</h3>
+                        <div class="property-specs">
+                            <span class="spec"><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span class="spec"><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span class="spec"><i class="fas fa-ruler-combined"></i> 1,600 sq ft</span>
+                            <span class="spec"><i class="fas fa-calendar"></i> Built 2020</span>
+                        </div>
+                        <p class="property-description">
+                            Perfect starter home in desirable Pleasanton location. Modern amenities, 
+                            energy-efficient features, and move-in ready condition.
+                        </p>
+                        <div class="property-features">
+                            <span class="feature">Move-In Ready</span>
+                            <span class="feature">Energy Efficient</span>
+                            <span class="feature">HOA Amenities</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="property-detail.html?id=6" class="btn btn-primary">VIEW DETAILS</a>
+                            <button class="btn btn-outline" onclick="scheduleShowing(6)">SCHEDULE SHOWING</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" onclick="loadMoreProperties()">
+                    <i class="fas fa-plus"></i> LOAD MORE PROPERTIES
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Search Options -->
+    <section class="search-options-section">
+        <div class="container">
+            <h2 class="search-options-title">Specialized Property Searches</h2>
+            <div class="search-options-grid">
+                <a href="search-by-city.html" class="search-option-card">
+                    <div class="search-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Search by City</h3>
+                    <p>Find homes in Livermore, Pleasanton, Dublin, or San Ramon</p>
+                    <span class="search-arrow">→</span>
+                </a>
+                
+                <a href="search-by-school.html" class="search-option-card">
+                    <div class="search-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Search by School District</h3>
+                    <p>Properties within top-rated school boundaries</p>
+                    <span class="search-arrow">→</span>
+                </a>
+                
+                <a href="search-by-lifestyle.html" class="search-option-card">
+                    <div class="search-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Search by Lifestyle</h3>
+                    <p>Homes that match your way of life and preferences</p>
+                    <span class="search-arrow">→</span>
+                </a>
+                
+                <a href="search-by-neighborhood.html" class="search-option-card">
+                    <div class="search-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Search by Neighborhood</h3>
+                    <p>Explore distinct communities and local amenities</p>
+                    <span class="search-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights -->
+    <section class="market-insights-properties">
+        <div class="container">
+            <div class="insights-content">
+                <div class="insights-text">
+                    <h2>Current Market Insights</h2>
+                    <div class="luxury-divider"></div>
+                    <p>
+                        The Tri-Valley real estate market continues to show strong performance 
+                        with increased demand for luxury properties and investment opportunities.
+                    </p>
+                    
+                    <div class="market-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">12%</span>
+                            <span class="highlight-text">Year-over-year appreciation</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">15 days</span>
+                            <span class="highlight-text">Average time on market</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">98%</span>
+                            <span class="highlight-text">Sale price to list price ratio</span>
+                        </div>
+                    </div>
+                    
+                    <a href="market-reports.html" class="btn btn-primary">VIEW DETAILED REPORTS</a>
+                </div>
+                
+                <div class="insights-chart">
+                    <canvas id="marketChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Buy or Sell?</h2>
+            <p class="cta-description">
+                Let's discuss your real estate goals and find the perfect property for your needs.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn cta-button">CONTACT TYLER</a>
+                <a href="tel:925-518-1083" class="btn btn-secondary">CALL NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../TylerMoxley_logo.svg" alt="Tyler Moxley Real Estate" class="footer-logo">
+                    <p class="footer-description">
+                        4th Generation Realtor serving Livermore, Pleasanton, and the Tri-Valley 
+                        with exceptional real estate experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Properties</h4>
+                        <ul class="footer-menu">
+                            <li><a href="current-listings.html">Current Listings</a></li>
+                            <li><a href="sold-properties.html">Recently Sold</a></li>
+                            <li><a href="luxury-homes.html">Luxury Homes</a></li>
+                            <li><a href="investment-properties.html">Investments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Areas</h4>
+                        <ul class="footer-menu">
+                            <li><a href="livermore.html">Livermore</a></li>
+                            <li><a href="pleasanton.html">Pleasanton</a></li>
+                            <li><a href="dublin.html">Dublin</a></li>
+                            <li><a href="san-ramon.html">San Ramon</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-menu">
+                            <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+                            <li><a href="sellers-guide.html">Seller's Guide</a></li>
+                            <li><a href="market-reports.html">Market Reports</a></li>
+                            <li><a href="neighborhood-guide.html">Neighborhoods</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Tyler Moxley Real Estate. All rights reserved.</p>
+                    <p>DRE License #[License Number] | Equal Housing Opportunity</p>
+                </div>
+                <div class="footer-contact">
+                    <span>(925) 518-1083</span>
+                    <span>2059 3rd St, Livermore, CA 94550</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/properties.js"></script>
+</body>
+</html>
