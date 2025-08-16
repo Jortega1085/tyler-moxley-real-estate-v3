@@ -576,13 +576,13 @@ let currentVideoIndex = 0;
 let isVideoPlaying = true;
 let autoRotateInterval;
 
-// All 5 videos in order
+// 4 videos in new order: Start with video 3, move video 1 to last, remove video 2
 const videoPlaylist = [
-    'hero-video.mp4',
-    'hero-video-Demo Video.mp4', 
-    '4770380-hd_1920_1080_30fps.mp4',
-    '7578540-uhd_3840_2160_30fps.mp4',
-    '7578550-uhd_3840_2160_30fps.mp4'
+    '4770380-hd_1920_1080_30fps.mp4',     // Video 3 (now first)
+    '7578540-uhd_3840_2160_30fps.mp4',    // Video 4 (now second)
+    '7578550-uhd_3840_2160_30fps.mp4',    // Video 5 (now third)
+    'hero-video.mp4'                       // Video 1 (now last)
+    // Removed: 'hero-video-Demo Video.mp4' (video 2)
 ];
 
 function initializeVideoControls() {
