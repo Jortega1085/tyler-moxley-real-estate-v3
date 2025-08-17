@@ -6,14 +6,65 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const body = document.body;
     
+    console.log('Navigation initialized');
+    console.log('Nav toggle element:', navToggle);
+    console.log('Nav menu element:', navMenu);
+    
     if (navToggle && navMenu) {
+        // Multiple event handlers to ensure it works
         navToggle.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation();
             console.log('Nav toggle clicked');
+            
+            const isActive = navToggle.classList.contains('active');
+            
+            if (isActive) {
+                // Close menu
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.classList.remove('nav-open');
+                console.log('Menu closed');
+            } else {
+                // Open menu
+                navToggle.classList.add('active');
+                navMenu.classList.add('active');
+                body.classList.add('nav-open');
+                console.log('Menu opened');
+            }
+        });
+        
+        // Touch events for mobile
+        navToggle.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            console.log('Touch start on nav toggle');
+        });
+        
+        navToggle.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Touch end on nav toggle - triggering click');
+            
+            const isActive = navToggle.classList.contains('active');
+            
+            if (isActive) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.classList.remove('nav-open');
+            } else {
+                navToggle.classList.add('active');
+                navMenu.classList.add('active');
+                body.classList.add('nav-open');
+            }
+        });
+        
+        // Fallback method for mobile touch issues
+        navToggle.onclick = function() {
+            console.log('Fallback onclick triggered');
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
             body.classList.toggle('nav-open');
-        });
+        };
         
         // Close menu when clicking on a link
         const navLinks = navMenu.querySelectorAll('.nav-link');
