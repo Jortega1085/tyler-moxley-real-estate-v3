@@ -156,11 +156,29 @@ function closeModal(button) {
     setTimeout(() => modal.remove(), 300);
 }
 
-// === BACK TO TOP REMOVED === 
-// Removed floating action button as it served no purpose and was distracting
+// === BACK TO TOP === 
 function initializeBackToTop() {
-    // Back to top functionality removed per user request
-    console.log('Back to top button disabled - brown circle removed');
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.className = 'back-to-top';
+    backToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    backToTopBtn.setAttribute('title', 'Back to top');
+    document.body.appendChild(backToTopBtn);
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 }
 
 // === PROPERTY FILTERS === 
