@@ -38,7 +38,7 @@
                 <span class="phone-number">(925) 518-1083</span>
             </div>
             
-            <div class="nav-toggle" id="nav-toggle">
+            <div class="nav-toggle" id="nav-toggle" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -420,6 +420,22 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+        // Mobile menu toggle function (inline for reliability)
+        function toggleMobileMenu() {
+            console.log('toggleMobileMenu called');
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            const body = document.body;
+            
+            if (navToggle && navMenu) {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                body.classList.toggle('nav-open');
+                console.log('Menu toggled:', navMenu.classList.contains('active'));
+            }
+        }
+    </script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/navigation.js"></script>
 </body>
