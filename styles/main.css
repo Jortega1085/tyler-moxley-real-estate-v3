@@ -52,6 +52,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -61,6 +63,33 @@ body {
     color: var(--text-primary);
     background-color: var(--background-primary);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Mobile viewport fix */
+@media screen and (max-width: 768px) {
+    .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        z-index: 5;
+    }
+    
+    .hero-text {
+        margin-bottom: var(--spacing-md);
+    }
 }
 
 /* === TYPOGRAPHY === */
