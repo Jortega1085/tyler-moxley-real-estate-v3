@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            console.log('Nav toggle clicked');
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
             body.classList.toggle('nav-open');

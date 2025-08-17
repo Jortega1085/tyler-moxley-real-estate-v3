@@ -134,6 +134,26 @@ section {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    width: 100%;
+}
+
+/* Ensure navbar is always visible on mobile */
+@media (max-width: 768px) {
+    .navbar {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .navbar.scrolled {
@@ -202,13 +222,21 @@ section {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.nav-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .nav-toggle span {
     width: 25px;
-    height: 2px;
+    height: 3px;
     background-color: var(--primary-color);
     transition: var(--transition);
+    border-radius: 2px;
 }
 
 /* === HERO SECTION === */
