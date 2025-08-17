@@ -160,7 +160,7 @@ function closeModal(button) {
 function initializeBackToTop() {
     const backToTopBtn = document.createElement('button');
     backToTopBtn.className = 'back-to-top';
-    backToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
+    backToTopBtn.innerHTML = '↑';
     backToTopBtn.setAttribute('aria-label', 'Back to top');
     backToTopBtn.setAttribute('title', 'Back to top');
     document.body.appendChild(backToTopBtn);
